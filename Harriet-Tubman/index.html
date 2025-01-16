@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Harriet Tubman</title>
-  <Body>
+<head>
+    <title>Harriet Tubman</title>
+    <style>
+        .news-ticker {
+            width: 100%;
+            background-color: #f0f0f0; /* Set the background color */
+            overflow: hidden; /* Hide content that overflows */
+        }
+
+        .news-ticker ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            animation: scroll 10s linear infinite; /* Adjust scroll speed here */
+        }
+
+        .news-ticker li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="news-ticker">
+        <ul>
+            <li>Breaking News: This is an important news update!</li>
+            <li>Stay tuned for more updates throughout the day.</li>
+            <li>Visit our blog for in-depth articles.</li>
+        </ul>
+    </div>
     <h1>Harriet Tubman Presentation</h1>
     <!-- Button to open another HTML file -->
-<!-- <button onclick="window.location.href = 'FunFacts.html';">Fun Facts About Harriet Tubman</button> -->
-<button onclick="window.location.href = 'Childhood.html';">Childhood of Harriet Tubman</button>
-  </Body>
+    <!-- <button onclick="window.location.href = 'FunFacts.html';">Fun Facts About Harriet Tubman</button> -->
+    <button onclick="window.location.href = 'Childhood.html';">Childhood of Harriet Tubman</button>
+</body>
 </html>

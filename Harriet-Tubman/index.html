@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harriet Tubman</title>
     <style>
         .news-ticker {
             width: 100%;
             background-color: #f0f0f0; /* Set the background color */
             overflow: hidden; /* Hide content that overflows */
+            white-space: nowrap; /* Prevent line breaks */
         }
 
         .news-ticker ul {
+            display: inline-block;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -17,12 +21,12 @@
         }
 
         .news-ticker li {
-            display: inline-block;
+            display: inline;
             padding: 10px 20px;
         }
 
         @keyframes scroll {
-            0% { transform: translateX(0%); }
+            0% { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
         }
     </style>
